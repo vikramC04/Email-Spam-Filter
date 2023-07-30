@@ -24,7 +24,7 @@ The visual spam filter application is implemented directly in `Gui.py` which lev
 ### API(app.py)
 
 The API is created using the Flask web framework that is located inside `app.py` file. It sets up an HTTP server that allows requests to the database. 
-- `/classification`: Accepts a POST request with a JSON payload containing a `text` parameter which should contain the email text that will be classified as spam or not spam.
+- `/classification`: Accepts a POST request with a JSON payload containing a `text` parameter which should include the email text that will be classified as spam or not spam.
 
 After receiving this request, the API calls the  `get_columns` and `prepare_df` methods to tokenize the text input. It also calls the `get_model` method that loads the model that is then used to predict the classification of the email. A JSON response is returned containing the classification of the email. 
 
@@ -35,6 +35,12 @@ Contains a machine learning model that is the result of stacking hyptertuned Log
 ### Dataframe Column Names(columns.json)
 
 Contains a dictionary of the column names used to train the `stack_model` in their correct index for use in tokenizing the text data. 
+
+## Requirements:
+1. scikit-learn: A machine learning library that is used to analyze data and create learning models
+2. customtkinter: An extension of the Tkinter pytyhon library used to create modern UI elements used for GUI interfaces
+3. numpy: A sparse library used to create multidimensional arrays
+4. Flask: A WSGI interface that serves as a connection between a web application and a web server
 
 
 
