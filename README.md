@@ -42,6 +42,55 @@ Contains a dictionary of the column names used to train the `stack_model` in the
 3. numpy: A sparse library used to create multidimensional arrays
 4. Flask: A WSGI interface that serves as a connection between a web application and a web server
 
+## Installation:
+
+1. Download and extract the raw `spamFilter.zip` file
+  
+2. Open the file location in command prompt:
+```
+cd "<file path>"
+```
+
+3. Install the required dependencies
+```python
+pip install -r requirements.txt
+```
+
+## API Usage
+
+Make sure initialize_gui is not equal to 0, vice versa if the GUI version is needed to be run:
+```python
+initialize_gui=1
+```
+
+Run the API file:
+```python
+python app.py
+```
+
+The spam_classification method returns a REST API url to generate text classification. Send a POST request to the following url:
+```bash
+http://localhost:5000/classification
+```
+
+Inside the text parameter located in the body of the request insert the email text that you wish to classify. 
+```json
+{
+  "text": "Enter text here"
+}
+```
+- "text" (string): The email text that will be classifed as spam or not spam.
+
+The API will return a JSON response containing the email analysis:
+```json
+{
+    "classification": "result"
+}
+```
+
+## License
+This project is licensed under the MIT License.
+
 
 
 
