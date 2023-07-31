@@ -47,7 +47,7 @@ Contains a dictionary of the column names used to train the `stack_model` in the
 1. Download and extract the raw `spamFilter.zip` file
   
 2. Open the file location in command prompt:
-```
+```bash
 cd "<file path>"
 ```
 
