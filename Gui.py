@@ -7,7 +7,7 @@ import numpy as np
 If the GUI version of the Spam filter is wanted, initialize_gui should be set to 0.
 For API requests, initialize gui should not be set to 0 to prevent the GUI instantiation. 
 '''
-initialize_gui=1
+initialize_gui=0
   
 class App(ctk.CTk):
      def __init__(self,*args, **kwargs):
