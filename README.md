@@ -44,7 +44,7 @@ Contains a dictionary of the column names used to train the `stack_model` in the
 
 ## Installation:
 
-1. Download and extract the raw `spamFilter.zip` file
+1. Download and extract the raw `spamFilter.zip` file or use git clone to a preferred directory
   
 2. Open the file location in command prompt:
 ```bash
