@@ -70,7 +70,7 @@ python app.py
 
 The spam_classification method returns a REST API url to generate text classification. Send a POST request to the following url:
 ```bash
-http://localhost:5000/classification
+http://localhost:####/classification
 ```
 
 Inside the text parameter located in the body of the request insert the email text that you wish to classify. 
