@@ -10,7 +10,7 @@ The core functionality of classifying spam or not spam emails is implemented in 
 
 In order to to generate predictions using the machine learning model created, `stack_model.pickle` and `columns.json` are exported with the machine learning model and dataframe columns necessary for model prediction stored in their respective files.   
 
-## Inside(spamFilter.zip)
+## Contents
 
 ### GUI Spam Filter(Gui.py)
 
